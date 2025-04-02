@@ -1,0 +1,36 @@
+{
+    "name": "mObywatel",
+    "short_name": "mObywatel",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "Aplikacja mObywatel - wirtualny dowód osobisty",
+    "orientation": "portrait",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://i.imgur.com/gC8DDHD.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://i.imgur.com/gC8DDHD.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "ios": {
+        "apple-mobile-web-app-title": "mObywatel",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "black-translucent",
+        "icons": [
+            {
+                "src": "https://i.imgur.com/gC8DDHD.png",
+                "sizes": "180x180"
+            }
+        ]
+    }
+}

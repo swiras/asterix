@@ -1,0 +1,302 @@
+
+<!-- saved from url=(0029)https://essatereza.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- iOS PWA Configuration -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="mObywatel">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="apple-touch-startup-image" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="https://i.imgur.com/gC8DDHD.png" color="#ffffff">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- iOS Splash Screen Meta -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <title>mObywatel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+</head>
+<body>
+    <img src="./assets/images/unnamed.png" class="logo">
+    <p class="logo_text">mocarz</p>
+
+    <p class="warning">Pamiętaj ta strona służy do generowania dowodów w celach edukacyjnych lub do wykorzystania w produkcjach filmowych, używanie wygenerowanego dowodu jako oryginału wystawionego przez państwo jest nielegalne.</p>
+
+    <div class="guide_holder">
+        <div class="top_holder">
+            <p class="guide_title">Instrukcja</p>
+            <img class="arrow" src="./assets/images/aUZmu0W.png">
+        </div>
+        <div class="guide_text">
+            <span style="font-size: 17px; font-weight: 500;">Dla systemu IOS:</span><br>
+            <ul>
+                <li>Upewnij się, że używasz przeglądarki Safari</li>
+                <li>Uzupełnij dane i kliknij wejdź</li>
+                <li>Naciśji udostępnij -&gt; Do Ekranu głównego</li>
+            </ul>
+            <span style="font-size: 17px; font-weight: 500;">Dla systemu Android:</span>
+            <ul>
+                <li>Upewnij się, że używasz przeglądarki google lub chrome</li>
+                <li>Uzupełnij dane i kliknij wejdź</li>
+                <li>Naciśji 3 kropki -&gt; Dodaj do ekranu głównego</li>
+            </ul>
+        </div>
+    </div>
+ 
+    <div class="upload">
+        <p class="error">To pole jest wymagane</p>
+        <img class="upload_uploaded" id="userPhoto" style="display: none;">
+        <input type="file" id="photoInput" accept="image/*" style="display: none;">
+        <div class="upload_uploading"></div>
+        <div class="upload_grid" onclick="document.getElementById('photoInput').click()">
+            <img class="upload_image" src="./assets/images/vwIQErh.png">
+            <p class="upload_text">Dodaj zdjęcie</p>
+        </div>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="name" class="input" placeholder="">
+        <span class="placeholder">Imię (imiona)</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+ 
+    <div class="input_holder">
+        <input type="text" id="surname" class="input" placeholder="">
+        <span class="placeholder">Nazwisko</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <p class="top_info">Płeć</p>
+    <div class="selector_box">
+        <div class="selected_grid">
+            <p class="selector_text selected_text">Mężczyzna</p>
+            <img class="selected_arrow" src="./assets/images/RXsdBB6.png">
+        </div>
+        <div class="option_box">
+            <div class="selector_option" id="m">
+                Mężczyzna
+            </div>
+            <div class="selector_option" id="k">
+                Kobieta
+            </div>
+        </div>
+    </div>
+
+    <div class="date">
+        <p class="top_info">Data urodzenia</p>
+        <div class="date_grid">
+            <input class="date_input" placeholder="DD" type="number">
+    
+            
+            <input class="date_input" placeholder="MM" type="number">
+    
+            
+            <input class="date_input" placeholder="YYYY" type="number">
+    
+            
+        </div>
+        <p class="error">Wprowadź prawidłową datę</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="nationality" class="input" placeholder="">
+        <span class="placeholder">Obywatelstwo</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="familyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="fathersFamilyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe ojca</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="mothersFamilyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe matki</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <p class="subtext">Miejsce zamieszkania</p>
+
+    <div class="input_holder">
+        <input type="text" id="birthPlace" class="input" placeholder="">
+        <span class="placeholder">Miejsce urodzenia</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="countryOfBirth" class="input" placeholder="">
+        <span class="placeholder">Kraj urodzenia</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="adress1" class="input" placeholder="">
+        <span class="placeholder">Ulica i numer domu</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="adress2" class="input" placeholder="">
+        <span class="placeholder">Kod pocztowy</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="city" class="input" placeholder="">
+        <span class="placeholder">Miasto</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <a class="go" href="#" style="text-decoration: none; color: inherit;">wejdź</a>
+    
+    <script src="./assets/index.js.pobrane"></script>
+    <script>
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('ServiceWorker registration successful');
+                })
+                .catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        });
+    }
+
+    // iOS Standalone Detection
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (isIOS && window.navigator.standalone) {
+        document.documentElement.classList.add('ios-standalone');
+    }
+    // Funkcja generująca PESEL
+    function generatePESEL(birthday, sex) {
+        // Data w formacie DD.MM.YYYY
+        const [day, month, year] = birthday.split('.').map(Number);
+        
+        // Obliczanie ostatnich 2 cyfr roku i miesiąca
+        let shortYear = year % 100;
+        let monthWithCentury = month;
+        if (year >= 1800 && year < 1900) monthWithCentury += 80;
+        if (year >= 2000 && year < 2100) monthWithCentury += 20;
+        if (year >= 2100 && year < 2200) monthWithCentury += 40;
+        if (year >= 2200 && year < 2300) monthWithCentury += 60;
+        
+        // Losowe liczby i płeć
+        const randomNumbers = Math.floor(100 + Math.random() * 900);
+        const genderDigit = sex === 'Kobieta' ? 
+            (Math.floor(Math.random() * 5) * 2) : 
+            (Math.floor(Math.random() * 5) * 2 + 1);
+        
+        // Część bez sumy kontrolnej
+        const partialPesel = 
+            `${shortYear.toString().padStart(2, '0')}` +
+            `${monthWithCentury.toString().padStart(2, '0')}` +
+            `${day.toString().padStart(2, '0')}` +
+            `${randomNumbers}` +
+            `${genderDigit}`;
+        
+        // Obliczanie sumy kontrolnej
+        const weights = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3];
+        let sum = 0;
+        for (let i = 0; i < 10; i++) {
+            sum += parseInt(partialPesel[i]) * weights[i];
+        }
+        const checksum = (10 - (sum % 10)) % 10;
+        
+        return partialPesel + checksum;
+    }
+    // Obsługa wyboru zdjęcia
+    document.getElementById('photoInput').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const img = document.getElementById('userPhoto');
+                img.src = event.target.result;
+                img.style.display = 'block';
+                localStorage.setItem('userPhoto', event.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Data Persistence Solution
+    function saveFormData() {
+        const formData = {
+            name: document.getElementById('name').value.toUpperCase(),
+            surname: document.getElementById('surname').value.toUpperCase(),
+            sex: document.querySelector('.selector_text.selected_text').textContent.toUpperCase(),
+            birthday: `${document.querySelector('.date_input[placeholder="DD"]').value}.${document.querySelector('.date_input[placeholder="MM"]').value}.${document.querySelector('.date_input[placeholder="YYYY"]').value}`,
+            nationality: document.getElementById('nationality').value.toUpperCase(),
+            familyName: document.getElementById('familyName').value.toUpperCase(),
+            fathersFamilyName: document.getElementById('fathersFamilyName').value.toUpperCase(),
+            mothersFamilyName: document.getElementById('mothersFamilyName').value.toUpperCase(),
+            birthPlace: document.getElementById('birthPlace').value.toUpperCase(),
+            countryOfBirth: document.getElementById('countryOfBirth').value.toUpperCase(),
+            adress: `UL. ${document.getElementById('adress1').value.toUpperCase()}\n${document.getElementById('adress2').value} ${document.getElementById('city').value.toUpperCase()}`,
+            registrationDate: `${String(document.querySelector('.date_input[placeholder="DD"]').value).padStart(2, '0')}.${String(document.querySelector('.date_input[placeholder="MM"]').value).padStart(2, '0')}.${document.querySelector('.date_input[placeholder="YYYY"]').value}`,
+            photo: document.getElementById('userPhoto').src || localStorage.getItem('userPhoto')
+        };
+        
+        // Save to both localStorage and sessionStorage as fallback
+        localStorage.setItem('formDataBackup', JSON.stringify(formData));
+        sessionStorage.setItem('formData', JSON.stringify(formData));
+        
+        return formData;
+    }
+
+    function loadFormData() {
+        const data = JSON.parse(localStorage.getItem('formDataBackup') || sessionStorage.getItem('formData') || '{}');
+        if (data.name) {
+            document.getElementById('name').value = data.name;
+            document.getElementById('surname').value = data.surname;
+            // ... wypełnij pozostałe pola ...
+            if (data.photo) {
+                const img = document.getElementById('userPhoto');
+                img.src = data.photo;
+                img.style.display = 'block';
+            }
+        }
+    }
+
+    // Load saved data on page load
+    document.addEventListener('DOMContentLoaded', loadFormData);
+
+    document.querySelector('.go').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Save data and get the complete form data
+        const formData = saveFormData();
+        const pesel = generatePESEL(formData.birthday, formData.sex);
+        
+        // Store additional PESEL data
+        localStorage.setItem('userPESEL', pesel);
+        
+        // Navigate with all data
+        if (formData.photo) {
+            localStorage.setItem('userPhoto', formData.photo);
+            window.location.href = `card.html?name=${encodeURIComponent(formData.name)}&surname=${encodeURIComponent(formData.surname)}&sex=${encodeURIComponent(formData.sex)}&birthday=${encodeURIComponent(formData.birthday)}&nationality=${encodeURIComponent(formData.nationality)}&familyName=${encodeURIComponent(formData.familyName)}&fathersFamilyName=${encodeURIComponent(formData.fathersFamilyName)}&mothersFamilyName=${encodeURIComponent(formData.mothersFamilyName)}&birthPlace=${encodeURIComponent(formData.birthPlace)}&countryOfBirth=${encodeURIComponent(formData.countryOfBirth)}&adress=${encodeURIComponent(formData.adress)}&pesel=${encodeURIComponent(pesel)}&photo=${encodeURIComponent(formData.photo)}`;
+        } else {
+            alert('Proszę dodać zdjęcie przed kontynuacją');
+        }
+    });
+        </script>   
+</body></html>	 
